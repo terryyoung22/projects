@@ -1,0 +1,82 @@
+{
+    "AWSTemplateFormatVersion" : "2010-09-09",
+    "Description" : "Attach IAM Role to an EC2",
+    "Parameters" : {
+      "KeyName" : {
+        "Description" : "EC2 Instance SSH Key",
+        "Type" : "AWS::EC2::KeyPair::freeaccountkey.pem"
+      },
+      "InstanceType" : {
+        "Description" : "EC2 instance specs configuration",
+        "Type" : "String",
+        "Default" : "t2.micro",
+        "AllowedValues" : ["t2.micro", "t2.small", "t2.medium"]
+      }
+    },
+    "Mappings" : {
+      "AMIs" : {
+        "us-east-1" : {
+          "Name" : "ami-07d0cf3af28718ef8"
+        }
+      }
+    },
+    "Resources" : {
+      "Test" : {
+        "Type" : "AWS::EC2::Instance",
+        "Properties" : {
+          "InstanceType" : {
+            "Ref" : "InstanceType"
+          },
+          "ImageId" : {
+            "Fn::FindInMap" : [
+              "AMIs",
+              {
+                "Ref" : "AWS::Region"
+              },
+              "Name"
+            ]
+          },
+          "KeyName" : {
+            "Ref" : "KeyName"
+          },
+          "SecurityGroupIds" : [
+            {
+              "Ref" : "SSHAccessSG"
+            }
+          ],
+          "Tags" : [
+            {
+              "Key" : "Name",
+              "Value" : "Test"
+            }
+          ]
+        }
+      },
+      "SSHAccessSG" : {
+        "Type" : "AWS::EC2::SecurityGroup",
+        "Properties" : {
+          "GroupDescription" : "Allow SSH and HTTP access from anywhere",
+          "SecurityGroupIngress" : [
+            {
+              "FromPort" : "22",
+              "ToPort" : "22",
+              "IpProtocol" : "tcp",
+              "CidrIp" : "0.0.0.0/0"
+            },
+            {
+                "FromPort" : "80",
+                "ToPort" : "80",
+                "IpProtocol" : "tcp",
+                "CidrIp" : "0.0.0.0/0"
+              }
+          ],
+          "Tags" : [
+            {
+              "Key" : "Name",
+              "Value" : "SSHAccessSG"
+            }
+          ]
+        }
+      }
+    }
+}
