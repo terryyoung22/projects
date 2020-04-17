@@ -10,7 +10,7 @@ Just to help speed up the process, go ahead and clone:
 ## Features
 Some of the big features I have to offer in this repository so far is:
 
-* Github Actions pipeline - Working build of my nginx Container and to be Flask
+* Github Actions pipeline - Working build of my nginx Container and soon to be Flask
 * Python files - Something I focus on, since this is public I dont put the real head bangers in but still a good time!
 * Web Framworks - Using Nginx and Flask!! again checkout that github actions part!
 * Others lol - I also have some of my other language projects. Looking to build that out more when I get some free time.
