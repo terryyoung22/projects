@@ -27,6 +27,6 @@ jobs:
 
     # Build and publish Docker image
     - name: Docker build and push
-      run: docker build -f ${GITHUB_WORKSPACE}/dockerfile -t ${{ secrets.DockerHubUser }}/${IMAGE_NAME}:latest . && docker push ${{ secrets.DockerHubUser }}/${IMAGE_NAME}:latest
+      run: docker build -f ${GITHUB_WORKSPACE}/nginx -t ${{ secrets.DockerHubUser }}/${IMAGE_NAME}:latest . && docker push ${{ secrets.DockerHubUser }}/${IMAGE_NAME}:latest
       env:
         IMAGE_NAME: nginx
