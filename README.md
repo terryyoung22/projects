@@ -1,4 +1,4 @@
-# Projects [![Uchiha](https://www.google.com/url?sa=i&url=https%3A%2F%2Fcutewallpaper.org%2F21%2Fuchiha-symbol%2Fview-page-21.html&psig=AOvVaw2ZpiAY2gOIr_pK5rTsO_Qd&ust=1587243300455000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCPjEqZ-s8OgCFQAAAAAdAAAAABAD)]
+# Projects [![Devops Coder Guy](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)]
 
 ## Breakdown
 This repository is the public version of some of my smaller applications.
