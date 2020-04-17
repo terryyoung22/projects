@@ -1,5 +1,7 @@
 FROM nginx:alpine
-COPY . /usr/share/nginx/
+ARG WORKING_DIR=/var/www/html/
+
+COPY . ${WORKING_DIR}
 
 # ARG WORKING_DIR=/var/www/html/
 
