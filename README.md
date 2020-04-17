@@ -1,4 +1,4 @@
-# Projects [![Devops Coder Guy](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)]
+# Projects [![Uchiha](https://www.google.com/url?sa=i&url=https%3A%2F%2Fcutewallpaper.org%2F21%2Fuchiha-symbol%2Fview-page-21.html&psig=AOvVaw2ZpiAY2gOIr_pK5rTsO_Qd&ust=1587243300455000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCPjEqZ-s8OgCFQAAAAAdAAAAABAD)]
 
 ## Breakdown
 This repository is the public version of some of my smaller applications.
@@ -14,5 +14,8 @@ Some of the big features I have to offer in this repository so far is:
 * Python files - Something I focus on, since this is public I dont put the real head bangers in but still a good time!
 * Web Framworks - Using Nginx and Flask!! again checkout that github actions part!
 * Others lol - I also have some of my other language projects. Looking to build that out more when I get some free time.
+
+
+
 
 ## Thanks For Checking in!!! 
