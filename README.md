@@ -5,7 +5,8 @@ This repository is the public version of some of my smaller applications.
 
 ## Clone
 Just to help speed up the process, go ahead and clone:
-''' 
+
+''' sh
 git clone https://github.com/terryyoung22/projects.git
 '''
 
