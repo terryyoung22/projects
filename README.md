@@ -1,7 +1,7 @@
 # Projects [![Devops Coder Guy](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)]
 
 ## Breakdown
-This repository is the public version of some of my smaller applications.
+This repository is the public version of some of my smaller applications. I am currently working on updating this repo as of `1/13/2021` and adding some of my projects that are hosted in other repos here to help keep everything in 1 location
 
 ## Clone
 Just to help speed up the process, go ahead and clone:
